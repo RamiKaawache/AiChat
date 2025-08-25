@@ -1,0 +1,18 @@
+[
+  {
+    "department": "Engineering",
+    "courses": ["Mechanical Engineering", "Civil Engineering", "Electrical Engineering"]
+  },
+  {
+    "department": "Computer Science",
+    "courses": ["Data Structures", "Algorithms", "Machine Learning"]
+  },
+  {
+    "department": "Business",
+    "courses": ["Accounting", "Marketing", "Finance"]
+  },
+  { "department": "Design", 
+    "courses": ["UI/UX Design", "Graphic Design", "Product Design"] 
+  }   
+
+]
