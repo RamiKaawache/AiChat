@@ -95,7 +95,7 @@ app.post("/chat", async (req, res) => {
         "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
       },
       body: JSON.stringify({
-        model: process.env.OPENROUTER_MODEL || "meta-llama/llama-3.3-70b-instruct:free",
+        model: process.env.OPENROUTER_MODEL || "deepseek/deepseek-r1-0528:free",
         messages: [
           { role: "system", content: "Decide if the user request needs database lookup. Reply ONLY with: 'database' or 'chat'." },
           { role: "user", content: message }
@@ -121,7 +121,7 @@ app.post("/chat", async (req, res) => {
         "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
       },
       body: JSON.stringify({
-        model: process.env.OPENROUTER_MODEL || "meta-llama/llama-3.3-70b-instruct:free",
+        model: process.env.OPENROUTER_MODEL || "deepseek/deepseek-r1-0528:free",
         messages: [
           { role: "system", content: SYSTEM_PROMPT },
           ...history.map(m => ({ role: m.role, content: m.text })),
